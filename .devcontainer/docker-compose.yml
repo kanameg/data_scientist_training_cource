@@ -5,6 +5,8 @@ services:
         image: kaggle/python:1.0
         build: ./python
         container_name: 'kaggle_python'
+        expose: 
+            - 8888
         stdin_open: true
         tty: true
         working_dir: '/tmp/work'
