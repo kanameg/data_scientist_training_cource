@@ -1,5 +1,5 @@
 {
-    "name": "Python Basic Project",
+    "name": "Python Kaggle Project",
     "dockerComposeFile": "docker-compose.yml",
     "service": "python",
     "workspaceFolder": "/tmp/work",
