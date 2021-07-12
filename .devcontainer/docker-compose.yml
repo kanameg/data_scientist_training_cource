@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
     python:
-        image: kaggle/python:1.0
+        image: kaname/kaggle_python:1.0
         build: ./python
         container_name: 'kaggle_python'
         expose: 
