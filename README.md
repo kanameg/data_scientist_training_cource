@@ -31,25 +31,13 @@ $ jupyer lab --allow-root
 4. ブラウザで8888ポートに接続することでjupyter labに接続できる。  
 
 ### ディレクトリ構成
-#### .decontainer
-##### python
-python開発環境用のDockerコンテナ関連の設定フォルダ。
-その下のpythonフォルダは、今回公式のpythonコンテナから変更を加えているので
-Dockerfileを追加している。
+#### .decontainerディレクトリ
 
-##### devcontainer.json
-リモート開発用のVSCodeの設定を記述する。
-
-##### docker-compsoe.yml
+`devcontainer.json`はリモート開発用のVSCodeの設定を記述する。
+そのほかは起動するコンテナ用の`Dockerfile`や`docker-compose`用のファイル。
 今回コンテナはひとつなのでdocker-composeは不要ではあるが、他のコンテナを追加したときのために
 docker-composeで起動するようにしている。
 
-#### python
-##### .vscode
-リモート接続時のVSCodeの設定フォルダです。
-###### launch.json
-デバック用の設定を記述します。
-
-##### src
+#### pythonディレクトリ
 起動したpythonコンテナがマウントするフォルダで、コンテナの `/tmp/work`以下にマウントされる。
 
