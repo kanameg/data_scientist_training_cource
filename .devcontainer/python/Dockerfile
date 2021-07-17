@@ -1,4 +1,5 @@
-FROM python:3.9-slim
+ARG VER="3.9"
+FROM python:${VER}-slim
 
 RUN apt-get update && apt-get install -y tzdata \
 && rm -rf /var/lib/apt/lists/*
